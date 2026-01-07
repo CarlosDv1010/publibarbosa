@@ -1,6 +1,15 @@
+"use client"
+
 import Link from "next/link"
 
 export function Footer() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <footer className="border-t border-border bg-muted/30">
       <div className="container mx-auto px-4 py-12">
@@ -21,24 +30,36 @@ export function Footer() {
             <h3 className="mb-4 font-semibold">Servicios</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                <button
+                  onClick={() => scrollToSection("litografia")}
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
                   Litografía
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                <button
+                  onClick={() => scrollToSection("avisos")}
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
                   Avisos
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                <button
+                  onClick={() => scrollToSection("sublimacion")}
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
                   Sublimación
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                <button
+                  onClick={() => scrollToSection("bordados")}
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
                   Bordados
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
@@ -47,24 +68,36 @@ export function Footer() {
             <h3 className="mb-4 font-semibold">Empresa</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
-                  Nosotros
-                </Link>
+                <button
+                  onClick={() => scrollToSection("servicios")}
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
+                  Servicios
+                </button>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                <button
+                  onClick={() => scrollToSection("portafolio")}
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
                   Portafolio
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
-                  Testimonios
-                </Link>
+                <button
+                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
+                  Inicio
+                </button>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                <button
+                  onClick={() => scrollToSection("contacto")}
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
                   Contacto
-                </Link>
+                </button>
               </li>
             </ul>
           </div>

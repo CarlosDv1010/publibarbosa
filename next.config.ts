@@ -1,11 +1,14 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/publibarbosa",
-  assetPrefix: "/publibarbosa/",
+  basePath: isProd ? "/publibarbosa" : "",
+  assetPrefix: isProd ? "/publibarbosa/" : "",
   images: {
     unoptimized: true,
+    qualities: [60, 75, 85],
   },
 };
 

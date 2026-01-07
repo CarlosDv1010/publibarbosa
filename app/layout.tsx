@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   title: "Publibarbosa - Agencia de Publicidad y Litografía",
   description:
     "Servicios de publicidad, litografía, avisos, sellos, sublimación, bordados, impresión 3D y plotter. Soluciones integrales para tu marca.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
