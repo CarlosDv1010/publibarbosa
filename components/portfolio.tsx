@@ -12,10 +12,10 @@ const portfolioCategories = [
     title: "Sublimación",
     description: "Estampados vibrantes y duraderos en prendas y productos",
     images: [
-      { src: "/portfolio/sublimacion/imagen-1.jpeg", alt: "Camiseta sublimada con diseño personalizado" },
-      { src: "/portfolio/sublimacion/imagen-2.jpeg", alt: "Tazas personalizadas con sublimación" },
-      { src: "/portfolio/sublimacion/imagen-3.jpeg", alt: "Gorras con diseños sublimados" },
-      { src: "/portfolio/sublimacion/imagen-4.jpeg", alt: "Productos promocionales sublimados" },
+      { src: "portfolio/sublimacion/imagen-1.jpeg", alt: "Camiseta sublimada con diseño personalizado" },
+      { src: "portfolio/sublimacion/imagen-2.jpeg", alt: "Tazas personalizadas con sublimación" },
+      { src: "portfolio/sublimacion/imagen-3.jpeg", alt: "Gorras con diseños sublimados" },
+      { src: "portfolio/sublimacion/imagen-4.jpeg", alt: "Productos promocionales sublimados" },
     ],
   },
   {
@@ -23,10 +23,10 @@ const portfolioCategories = [
     title: "Avisos Publicitarios",
     description: "Señalización impactante para tu negocio",
     images: [
-      { src: "/portfolio/avisos/imagen-1.jpeg", alt: "Aviso luminoso para fachada" },
-      { src: "/portfolio/avisos/imagen-2.jpeg", alt: "Letrero corporativo de gran formato" },
-      { src: "/portfolio/avisos/imagen-3.jpeg", alt: "Valla publicitaria exterior" },
-      { src: "/portfolio/avisos/imagen-4.jpeg", alt: "Rótulo para tienda comercial" },
+      { src: "portfolio/avisos/imagen-1.jpeg", alt: "Aviso luminoso para fachada" },
+      { src: "portfolio/avisos/imagen-2.jpeg", alt: "Letrero corporativo de gran formato" },
+      { src: "portfolio/avisos/imagen-3.jpeg", alt: "Valla publicitaria exterior" },
+      { src: "portfolio/avisos/imagen-4.jpeg", alt: "Rótulo para tienda comercial" },
     ],
   },
   {
@@ -34,10 +34,10 @@ const portfolioCategories = [
     title: "Bordados",
     description: "Detalles de calidad premium en tus prendas",
     images: [
-      { src: "/portfolio/bordados/imagen-1.jpeg", alt: "Logo bordado en uniformes corporativos" },
-      { src: "/portfolio/bordados/imagen-2.jpeg", alt: "Bordados en gorras personalizadas" },
-      { src: "/portfolio/bordados/imagen-3.jpeg", alt: "Chaquetas con bordado empresarial" },
-      { src: "/portfolio/bordados/imagen-4.jpeg", alt: "Bordados decorativos en textiles" },
+      { src: "portfolio/bordados/imagen-1.jpeg", alt: "Logo bordado en uniformes corporativos" },
+      { src: "portfolio/bordados/imagen-2.jpeg", alt: "Bordados en gorras personalizadas" },
+      { src: "portfolio/bordados/imagen-3.jpeg", alt: "Chaquetas con bordado empresarial" },
+      { src: "portfolio/bordados/imagen-4.jpeg", alt: "Bordados decorativos en textiles" },
     ],
   },
   {
@@ -45,10 +45,10 @@ const portfolioCategories = [
     title: "Impresión 3D",
     description: "Prototipos y piezas personalizadas en 3D",
     images: [
-      { src: "/portfolio/impresion3d/imagen-1.jpeg", alt: "Prototipo funcional en 3D" },
-      { src: "/portfolio/impresion3d/imagen-2.jpeg", alt: "Figura personalizada impresa" },
-      { src: "/portfolio/impresion3d/imagen-3.jpeg", alt: "Pieza técnica de repuesto" },
-      { src: "/portfolio/impresion3d/imagen-4.jpeg", alt: "Modelo arquitectónico en miniatura" },
+      { src: "portfolio/impresion3d/imagen-1.jpeg", alt: "Prototipo funcional en 3D" },
+      { src: "portfolio/impresion3d/imagen-2.jpeg", alt: "Figura personalizada impresa" },
+      { src: "portfolio/impresion3d/imagen-3.jpeg", alt: "Pieza técnica de repuesto" },
+      { src: "portfolio/impresion3d/imagen-4.jpeg", alt: "Modelo arquitectónico en miniatura" },
     ],
   },
   {
@@ -56,10 +56,10 @@ const portfolioCategories = [
     title: "Plotter de Corte",
     description: "Cortes precisos en vinil y otros materiales",
     images: [
-      { src: "/portfolio/plotter/imagen-1.jpeg", alt: "Vinil decorativo para vehículos" },
-      { src: "/portfolio/plotter/imagen-2.jpeg", alt: "Stickers personalizados cortados" },
-      { src: "/portfolio/plotter/imagen-3.jpeg", alt: "Rotulación de vitrinas comerciales" },
-      { src: "/portfolio/plotter/imagen-4.jpeg", alt: "Diseños en vinil para paredes" },
+      { src: "portfolio/plotter/imagen-1.jpeg", alt: "Vinil decorativo para vehículos" },
+      { src: "portfolio/plotter/imagen-2.jpeg", alt: "Stickers personalizados cortados" },
+      { src: "portfolio/plotter/imagen-3.jpeg", alt: "Rotulación de vitrinas comerciales" },
+      { src: "portfolio/plotter/imagen-4.jpeg", alt: "Diseños en vinil para paredes" },
     ],
   },
   {
@@ -67,10 +67,10 @@ const portfolioCategories = [
     title: "Sellos",
     description: "Sellos profesionales personalizados",
     images: [
-      { src: "/portfolio/sellos/imagen-1.jpeg", alt: "Sello automático corporativo" },
-      { src: "/portfolio/sellos/imagen-2.jpeg", alt: "Sello manual personalizado" },
-      { src: "/portfolio/sellos/imagen-3.jpeg", alt: "Sellos para fechador" },
-      { src: "/portfolio/sellos/imagen-4.jpeg", alt: "Juego de sellos empresariales" },
+      { src: "portfolio/sellos/imagen-1.jpeg", alt: "Sello automático corporativo" },
+      { src: "portfolio/sellos/imagen-2.jpeg", alt: "Sello manual personalizado" },
+      { src: "portfolio/sellos/imagen-3.jpeg", alt: "Sellos para fechador" },
+      { src: "portfolio/sellos/imagen-4.jpeg", alt: "Juego de sellos empresariales" },
     ],
   },
 ]
