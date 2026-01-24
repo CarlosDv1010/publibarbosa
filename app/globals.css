@@ -166,7 +166,7 @@
   }
 
   .art-title {
-    @apply font-extrabold tracking-wide uppercase;
-    letter-spacing: 0.06em;
+    @apply font-extrabold tracking-wide;
+    letter-spacing: 0.03em;
   }
 }
