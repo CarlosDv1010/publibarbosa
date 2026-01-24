@@ -9,7 +9,7 @@ export function Contact() {
   const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimation(0.3)
   const { elementRef: cardRef, isVisible: cardVisible } = useScrollAnimation(0.2)
 
-  const whatsappNumber = "573001234567"
+  const whatsappNumber = "573227025123"
   const whatsappMessage = "Hola, me gustaría solicitar una cotización para mis productos publicitarios"
 
   return (
@@ -37,56 +37,57 @@ export function Contact() {
           }`}
         >
           <Card className="lg:col-span-2">
-            <CardHeader className="text-center">
-              <CardTitle className="text-2xl">Información de contacto</CardTitle>
-              <CardDescription>Nuestro equipo está listo para atenderte y hacer realidad tus proyectos</CardDescription>
-            </CardHeader>
-            <CardContent className="grid gap-6 sm:grid-cols-2">
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
-                  <Phone className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="mb-1 font-semibold">Teléfono</h3>
-                  <p className="text-sm text-muted-foreground">+57 (300) 123-4567</p>
-                  <p className="text-sm text-muted-foreground">+57 (1) 234-5678</p>
-                </div>
-              </div>
+          <CardHeader className="text-center">
+            <CardTitle className="text-2xl">Información de contacto</CardTitle>
+            <CardDescription>
+              Nuestro equipo está listo para atenderte y hacer realidad tus proyectos
+            </CardDescription>
+          </CardHeader>
 
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
-                  <Mail className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="mb-1 font-semibold">Email</h3>
-                  <p className="text-sm text-muted-foreground">info@publibarbosa.com</p>
-                  <p className="text-sm text-muted-foreground">ventas@publibarbosa.com</p>
-                </div>
+          <CardContent className="grid gap-6 sm:grid-cols-2">
+            {/* Teléfono */}
+            <div className="flex items-start gap-4">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <Phone className="h-5 w-5 text-primary" />
               </div>
+              <div>
+                <h3 className="mb-1 font-semibold">Teléfono</h3>
+                <p className="text-sm text-muted-foreground">321 381 3524</p>
+                <p className="text-sm text-muted-foreground">310 788 9068</p>
+              </div>
+            </div>
 
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
-                  <MapPin className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="mb-1 font-semibold">Ubicación</h3>
-                  <p className="text-sm text-muted-foreground">Calle 123 #45-67</p>
-                  <p className="text-sm text-muted-foreground">Bogotá, Colombia</p>
-                </div>
+            {/* Email */}
+            <div className="flex items-start gap-4">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <Mail className="h-5 w-5 text-primary" />
               </div>
+              <div>
+                <h3 className="mb-1 font-semibold">Email</h3>
+                <p className="text-sm text-muted-foreground">
+                  publibarbosa2026@gmail.com
+                </p>
+              </div>
+            </div>
 
-              <div className="flex items-start gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
-                  <Clock className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="mb-1 font-semibold">Horario</h3>
-                  <p className="text-sm text-muted-foreground">Lun - Vie: 8:00 AM - 6:00 PM</p>
-                  <p className="text-sm text-muted-foreground">Sáb: 9:00 AM - 1:00 PM</p>
-                </div>
+            {/* Ubicación */}
+            <div className="flex items-start gap-4 sm:col-span-2">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <MapPin className="h-5 w-5 text-primary" />
               </div>
-            </CardContent>
-          </Card>
+              <div>
+                <h3 className="mb-1 font-semibold">Ubicación</h3>
+                <p className="text-sm text-muted-foreground">
+                  Calle 13 N.º 9-19, frente a Funeraria Quintero
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Barbosa, Santander
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
 
           <div className="lg:col-span-2 text-center">
             <Button size="lg" className="gap-2" asChild>

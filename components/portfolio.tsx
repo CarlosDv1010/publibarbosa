@@ -46,7 +46,6 @@ const portfolioCategories = [
     description: "Prototipos y piezas personalizadas en 3D",
     images: [
       { src: "portfolio/impresion3d/imagen-1.jpeg", alt: "Prototipo funcional en 3D" },
-      { src: "portfolio/impresion3d/imagen-2.jpeg", alt: "Figura personalizada impresa" },
       { src: "portfolio/impresion3d/imagen-3.jpeg", alt: "Pieza técnica de repuesto" },
       { src: "portfolio/impresion3d/imagen-4.jpeg", alt: "Modelo arquitectónico en miniatura" },
     ],
@@ -67,10 +66,11 @@ const portfolioCategories = [
     title: "Sellos",
     description: "Sellos profesionales personalizados",
     images: [
-      { src: "portfolio/sellos/imagen-1.jpeg", alt: "Sello automático corporativo" },
-      { src: "portfolio/sellos/imagen-2.jpeg", alt: "Sello manual personalizado" },
-      { src: "portfolio/sellos/imagen-3.jpeg", alt: "Sellos para fechador" },
-      { src: "portfolio/sellos/imagen-4.jpeg", alt: "Juego de sellos empresariales" },
+      { src: "portfolio/sellos/imagen-1.jpeg", alt: "Sello" },
+      { src: "portfolio/sellos/imagen-2.jpeg", alt: "Sello" },
+      { src: "portfolio/sellos/imagen-3.jpeg", alt: "Sellos" },
+      { src: "portfolio/sellos/imagen-4.jpeg", alt: "Juego de sellos" },
+      { src: "portfolio/sellos/imagen-5.jpeg", alt: "Sello" },
     ],
   },
 ]
