@@ -1,42 +1,67 @@
+"use client"
+
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa"
+import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE } from "@/lib/constants"
+
 
 export function Header() {
-  const whatsappNumber = "573001234567" // Replace with actual WhatsApp Business number
-  const whatsappMessage = "Hola, me gustaría solicitar una cotización"
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-            <span className="text-xl font-bold text-primary-foreground">PB</span>
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/90 backdrop-blur">
+      <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6">
+        
+        {/* LOGO */}
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/header/logo.jpeg"
+            alt="Publibarbosa logo"
+            width={90}
+            height={90}
+            className="rounded-full"
+            priority
+          />
+
+          <div className="leading-tight">
+            <span className="block text-xl font-extrabold tracking-wide">
+              Publibarbosa
+            </span>
+            <span className="block text-xs text-muted-foreground tracking-wider">
+              Publicidad · Avisos · Litografía
+            </span>
           </div>
-          <span className="text-xl font-bold">Publibarbosa</span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-6">
-          <Link href="#servicios" className="text-sm font-medium transition-colors hover:text-primary">
+        {/* NAV */}
+        <nav className="hidden md:flex items-center gap-8">
+          <Link href="#servicios" className="nav-link">
             Servicios
           </Link>
-          <Link href="#portafolio" className="text-sm font-medium transition-colors hover:text-primary">
+          <Link href="#portafolio" className="nav-link">
             Portafolio
           </Link>
-          <Link href="#contacto" className="text-sm font-medium transition-colors hover:text-primary">
+          <Link href="#contacto" className="nav-link">
             Contacto
           </Link>
-          <Button asChild>
+
+          {/* WHATSAPP CTA */}
+          <Button asChild className="whatsapp-btn brand-glow">
             <a
-              href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`}
               target="_blank"
               rel="noopener noreferrer"
+              className="flex items-center gap-2"
             >
-              Cotizar ahora
+              <FaWhatsapp className="h-5 w-5" />
+              Cotizar
             </a>
           </Button>
         </nav>
 
+        {/* MOBILE */}
         <Button variant="ghost" size="icon" className="md:hidden">
           <Menu className="h-6 w-6" />
           <span className="sr-only">Abrir menú</span>
@@ -45,3 +70,5 @@ export function Header() {
     </header>
   )
 }
+
+

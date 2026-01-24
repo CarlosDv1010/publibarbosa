@@ -116,10 +116,57 @@
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+  h1 {
+    @apply text-4xl md:text-5xl font-extrabold tracking-tight;
   }
-  body {
-    @apply bg-background text-foreground;
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold tracking-tight;
+  }
+
+  h3 {
+    @apply text-xl font-semibold tracking-tight;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+
+@layer utilities {
+  .brand-glow {
+    box-shadow: 0 0 0 0.15rem oklch(0.55 0.25 25 / 0.25);
+  }
+}
+
+
+@layer components {
+  /* Links del header */
+  .nav-link {
+    @apply text-sm font-semibold tracking-wider uppercase
+          text-muted-foreground transition-colors hover:text-primary;
+  }
+
+
+  /* Botón WhatsApp */
+  .whatsapp-btn {
+    @apply bg-[#25D366] text-white font-semibold tracking-wide
+           hover:bg-[#1ebe5d] shadow-sm;
+  }
+
+  /* Marca / nombre */
+  .brand-title {
+    @apply text-xl font-extrabold tracking-wider;
+  }
+
+
+  .brand-subtitle {
+    @apply text-xs tracking-widest uppercase text-muted-foreground;
+  }
+
+  .art-title {
+    @apply font-extrabold tracking-wide uppercase;
+    letter-spacing: 0.06em;
   }
 }

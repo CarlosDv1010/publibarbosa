@@ -4,13 +4,15 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE } from "@/lib/constants"
+import { FaWhatsapp } from "react-icons/fa"
+
+
 
 export function Contact() {
   const { elementRef: titleRef, isVisible: titleVisible } = useScrollAnimation(0.3)
   const { elementRef: cardRef, isVisible: cardVisible } = useScrollAnimation(0.2)
 
-  const whatsappNumber = "573227025123"
-  const whatsappMessage = "Hola, me gustaría solicitar una cotización para mis productos publicitarios"
 
   return (
     <section id="contacto" className="py-20 md:py-32">
@@ -90,14 +92,19 @@ export function Contact() {
 
 
           <div className="lg:col-span-2 text-center">
-            <Button size="lg" className="gap-2" asChild>
+            <Button
+              size="lg"
+              asChild
+              className="gap-2 whatsapp-btn"
+            >
               <a
-                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center gap-2"
               >
-                <Phone className="h-4 w-4" />
-                Solicitar cotización ahora
+                <FaWhatsapp className="h-5 w-5" />
+                Solicitar cotización
               </a>
             </Button>
           </div>
